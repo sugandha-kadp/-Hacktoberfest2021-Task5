@@ -19,11 +19,15 @@ int main(void)
   {
      case 1 :
        otRate = 1000;
-      break;
-     case 8 :
+       break;
+     case 2 :
         otRate = 1500;
-     default :
+        break;
+     case 3 :
         otRate = 1700;
+        break;
+     default :
+        cout << "Please enter correct value" << endl;
       break;
   }
  netSalary = salary + otHrs* otRate;
