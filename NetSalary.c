@@ -6,8 +6,8 @@ int main(void)
  int etype, otHrs, otRate;
 
   // Emp types are 1,2,3
- cout << "Enter Employee Type : "
- cout >> salary;
+ cout << "Enter Employee Type : ";
+ cin >> salary;
 
  cout << "Enter Salary : ";
  cin >> salary;
@@ -15,7 +15,7 @@ int main(void)
  cout << "Enter OtHrs : ";
  cin >> otHrs;
 
-  switch (salary)
+  switch (otHrs)
   {
      case 1 :
        otRate = 1000;
@@ -27,7 +27,6 @@ int main(void)
       break;
   }
  netSalary = salary + otHrs* otRate;
- cout << "Net Salary is "<<  
-
+ cout << "Net Salary is "<<endl;  
  return 0;
 }
