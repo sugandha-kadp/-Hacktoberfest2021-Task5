@@ -28,7 +28,7 @@ int main(void)
       break;
   }
  netSalary = salary + otHrs* otRate;
- cout << "Net Salary is "<< is netSalary;
+ cout << "Net Salary is "<< netSalary;
 
  return 0;
 }
