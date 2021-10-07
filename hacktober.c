@@ -8,7 +8,7 @@ int main(void)
  int etype, otHrs, otRate;
 
   // Emp types are 1,2,3
- cout << "Enter Employee Type : "
+ cout << "Enter Employee Type : ";
  cin >> etype;
 
  cout << "Enter Salary : ";
