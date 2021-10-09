@@ -5,6 +5,7 @@ int main(){
 	double salary, netsalary;
 	int emptype,hour,rate;
 	
+	
 	printf("Enter Employee Type --- ");
 	scanf("%d",&emptype);
 	printf("Enter Employee Salary --- ");
@@ -17,7 +18,7 @@ int main(){
 		case 1 :
        			rate = 1000;
       			break;
-     	case 8 :
+     	case 2 :
         		rate = 1500;
      			break;
 		default :
