@@ -1,21 +1,12 @@
 #include <iostream>
-using namespace std;
+
 int main(void)
 {
  double salary, netSalary;
  int etype, otHrs, otRate;
-
-  // Emp types are 1,2,3
- cout << "Enter Employee Type : "
- cout >> salary;
-
- cout << "Enter Salary : ";
- cin >> salary;
-
- cout << "Enter OtHrs : ";
- cin >> otHrs;
-
-  switch (salary)
+ char s[100];
+ 
+  switch (etype)
   {
      case 1 :
        otRate = 1000;
@@ -27,7 +18,10 @@ int main(void)
       break;
   }
  netSalary = salary + otHrs* otRate;
- cout << "Net Salary is "<<  
+
+char sNetSalary[100];
+itoa(netSalary, sNetSalary, 100);
+
 
  return 0;
 }
