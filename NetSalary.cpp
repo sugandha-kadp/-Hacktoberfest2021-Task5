@@ -22,9 +22,11 @@ int main(void)
       break;
      case 8 :
         otRate = 1500;
-     default :
-        otRate = 1700;
       break;
+      default :
+        otRate = 1700;
+    
+      
   }
  netSalary = salary + otHrs* otRate;
  cout << "Net Salary is "<<  netSalary;
