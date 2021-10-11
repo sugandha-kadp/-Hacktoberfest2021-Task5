@@ -23,6 +23,7 @@ int main(void)
          break;
       case 8 :
          otRate = 1500;
+         break;
       default :
          otRate = 1700;
          break;
