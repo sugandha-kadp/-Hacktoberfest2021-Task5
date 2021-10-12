@@ -1,0 +1,28 @@
+class Solution {
+public:
+    bool canJump(vector<int>& v) {
+        int i=0,reachable=0,n=v.size();
+        
+        if(v[0]==0 and v.size()>1)
+            return false;
+        
+        for(i=0;i<n;i++)
+        {
+            if(reachable>=i)
+            {
+                reachable=max(reachable,i+v[i]);
+            }
+            else
+                break;
+                
+        }
+        
+        if(reachable>=n-1)
+            return true;
+        
+        return false;
+        
+        
+        
+    }
+};
