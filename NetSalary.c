@@ -2,32 +2,43 @@
 using namespace std;
 int main(void)
 {
- double salary, netSalary;
- int etype, otHrs, otRate;
+double salary, netSalary;
+int etype, otHrs, otRate;
 
-  // Emp types are 1,2,3
- cout << "Enter Employee Type : "
- cout >> salary;
 
- cout << "Enter Salary : ";
- cin >> salary;
 
- cout << "Enter OtHrs : ";
- cin >> otHrs;
+// Emp types are 1,2,3
+cout << "Enter Employee Type : ";
+cin >> etype;
 
-  switch (salary)
-  {
-     case 1 :
-       otRate = 1000;
-      break;
-     case 8 :
-        otRate = 1500;
-     default :
-        otRate = 1700;
-      break;
-  }
- netSalary = salary + otHrs* otRate;
- cout << "Net Salary is "<<  
 
- return 0;
+
+cout << "Enter Salary : "<<endl;
+cin >> salary;
+
+
+
+cout << "Enter OtHrs : "<<endl;
+cin >> otHrs;
+
+
+
+switch (etype)
+{
+case 1 :
+otRate = 1000;
+break;
+case 2 :
+otRate = 1500;
+break;
+default :
+otRate = 1700;
+
+}
+netSalary = salary + otHrs* otRate;
+cout << "Net Salary is "<<netSalary<<endl;
+
+
+
+return 0;
 }
