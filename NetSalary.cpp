@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 int main(void)
@@ -6,8 +7,8 @@ int main(void)
  int etype, otHrs, otRate;
 
   // Emp types are 1,2,3
- cout << "Enter Employee Type : "
- cout >> salary;
+ cout << "Enter Employee Type : ";
+ cin >> etype;
 
  cout << "Enter Salary : ";
  cin >> salary;
@@ -15,19 +16,23 @@ int main(void)
  cout << "Enter OtHrs : ";
  cin >> otHrs;
 
-  switch (salary)
+  switch (etype)
   {
-     case 1 :
+      case 1 :
        otRate = 1000;
       break;
-     case 8 :
+      case 2 :
         otRate = 1500;
-     default :
+      break;
+      case 3:    
         otRate = 1700;
+        break;
+      default :
+         cout<<"Enter correct Employee Type";
       break;
   }
  netSalary = salary + otHrs* otRate;
- cout << "Net Salary is "<<  
+ cout << "Net Salary is "<< netSalary; 
 
  return 0;
 }
