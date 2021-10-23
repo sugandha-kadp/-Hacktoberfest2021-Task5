@@ -1,8 +1,8 @@
-#include <iostream>
+#include <iostream>  // including input, output stream function
 using namespace std;
 int main(void)
 {
- double salary, netSalary;
+ double salary, netSalary;  // declaring datatype 
  int etype, otHrs, otRate;
 
   // Emp types are 1,2,3
