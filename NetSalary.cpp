@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std;
+
 int main(void)
 {
+
  double salary, netSalary;
  int etype, otHrs, otRate;
 
@@ -15,21 +17,21 @@ int main(void)
  cout << "Enter OtHrs : ";
  cin >> otHrs;
 
-  switch (etype)
-  {
-     case 1 :
-       otRate = 1000;
-      break;
-     case 8 :
-        otRate = 1500;
-      break;
+   switch (etype)
+   {
+      case 1 :
+        otRate = 1000;
+       break;
+      case 2 :
+         otRate = 1500;
+       break;
       default :
-        otRate = 1700;
-    
-      
-  }
+         otRate = 1700;
+       break;
+   }
+
  netSalary = salary + otHrs* otRate;
- cout << "Net Salary is "<<  netSalary;
+ cout << "Net Salary is "<< netSalary;
 
  return 0;
 }
